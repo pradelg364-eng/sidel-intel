@@ -286,3 +286,64 @@
     inset: -1px;
   }
 }
+
+/* ============================================================
+   iPhone / Mobile Safe Area & Touch Target Utilities
+   ============================================================ */
+
+/* Safe-area bottom padding for iPhone home indicator */
+.pb-safe {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+/* Prevent horizontal overflow on narrow screens */
+body, #root {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Minimum touch target size for interactive elements (Apple HIG: 44px) */
+@media (max-width: 768px) {
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Allow smaller decorative / icon-only hits to be exempt if explicitly set */
+  button.touch-exempt, a.touch-exempt {
+    min-height: unset;
+    min-width: unset;
+  }
+
+  /* Card text should not overflow */
+  .card, [class*="card"] {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Tables scroll horizontally on small screens */
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Badges and tags truncate gracefully */
+  .badge, [class*="badge"] {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* Smooth momentum scrolling on iOS */
+.overflow-y-auto, .overflow-auto, main {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent font size auto-adjust on iOS rotation */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}

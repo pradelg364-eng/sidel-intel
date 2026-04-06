@@ -12,6 +12,9 @@ import IPAnalysis from "@/pages/IPAnalysis";
 import Financial from "@/pages/Financial";
 import Strategy from "@/pages/Strategy";
 import Subscribe from "@/pages/Subscribe";
+import RegulatoryMonitor from "@/pages/RegulatoryMonitor";
+import RegulatoryRoadmap from "@/pages/RegulatoryRoadmap";
+import RDRoadmap from "@/pages/RDRoadmap";
 import NotFound from "@/pages/not-found";
 
 export default function App() {
@@ -28,6 +31,9 @@ export default function App() {
               <Route path="/financial" component={Financial} />
               <Route path="/strategy" component={Strategy} />
               <Route path="/subscribe" component={Subscribe} />
+              <Route path="/regulatory/monitor" component={RegulatoryMonitor} />
+              <Route path="/regulatory/roadmap" component={RegulatoryRoadmap} />
+              <Route path="/regulatory/rd-roadmap" component={RDRoadmap} />
               <Route component={NotFound} />
             </Switch>
           </Layout>
