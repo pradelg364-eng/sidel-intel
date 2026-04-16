@@ -1,8 +1,8 @@
-// Auto-generated intelligence data — 2026-03-21
+// Auto-generated intelligence data — 2026-04-16
 // DO NOT EDIT MANUALLY
 
 export const intelligenceData = {
-  "generated_at": "2026-03-21",
+  "generated_at": "2026-04-16",
   "sidel": {
     "revenue_eur_m": 1720,
     "revenue_str": "€1.72 billion (FY2024)",
@@ -175,6 +175,12 @@ export const intelligenceData = {
           "date": "2024",
           "summary": "",
           "url": ""
+        },
+        {
+          "title": "Krones North America expansion confirmée ; présence à MD&M South (22-23 avril 2026)",
+          "date": "2026-04-16",
+          "summary": "L'expansion de Krones en Amérique du Nord a été confirmée (Packaging Digest, novembre 2025). Krones sera présent au salon MD&M South (22-23 avril 2026), renforçant sa visibilité commerciale aux États-Unis. Krones compte déjà 1 600 employés aux États-Unis et construit une nouvelle usine en Inde pour la production locale.",
+          "url": "https://www.packagingdigest.com/"
         }
       ],
       "partnerships": [
@@ -410,6 +416,12 @@ export const intelligenceData = {
           "date": "2026-03-10",
           "summary": "",
           "url": ""
+        },
+        {
+          "title": "KHS Interpack 2026 preview: InnoPET FreshSafe QuadBlock, Innopack Kisters TSP Advanced, and tethered caps system confirmed (Hall 13, Stand A31)",
+          "date": "2026-04-16",
+          "summary": "KHS published YouTube preview videos (8 avril 2026) confirming three showcase products at Interpack 2026 (7-13 mai, Hall 13 Stand A31): the InnoPET FreshSafe QuadBlock (SBM + barrier coating + filling + labelling bloc), the Innopack Kisters TSP Advanced secondary packaging system, and a tethered caps control system. Positioning centred on operational efficiency and regulatory compliance (PPWR/SUPD tethered caps mandate).",
+          "url": "https://www.youtube.com/@KHSGroup"
         }
       ],
       "partnerships": [
@@ -815,6 +827,12 @@ export const intelligenceData = {
           "date": "2026-01",
           "summary": "",
           "url": ""
+        },
+        {
+          "title": "Omnia Technologies (maison mère ACMI) atteint €700M de CA agrégé — positionnée comme alternative européenne complète blowing-filling-labelling-packaging",
+          "date": "2026-04-16",
+          "summary": "Suite aux acquisitions d'ACMI, Sacmi Beverage et Sacmi Labelling, Omnia Technologies affiche un CA agrégé de €700M et se positionne comme 'alternative européenne aux géants du beverage' avec une couverture complète de la chaîne : blowing, filling, labelling, packaging. Cette consolidation crée un concurrent intégré de taille significative face à Sidel sur le segment mid-market européen.",
+          "url": "https://www.thecanmaker.com/"
         }
       ],
       "partnerships": [

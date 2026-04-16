@@ -1,9 +1,9 @@
-// Auto-generated regulatory intelligence data — 2026-04-06
+// Auto-generated regulatory intelligence data — 2026-04-16
 // Sources: EU Official Journal, national regulators, UN treaty process
 // DO NOT EDIT MANUALLY — regenerated monthly
 
 export const regulatoryData = {
-  "as_of": "2026-04-06",
+  "as_of": "2026-04-16",
   "regulations": [
     {
       "id": "PPWR_2025_40",
@@ -52,7 +52,16 @@ export const regulatoryData = {
           "milestone": "Member States must establish deposit return schemes (DRS) for beverage containers up to 3L (plastic and metal); 90% sepa"
         }
       ],
-      "source_url": "https://fkur.com/en/knowledgebase/ppwr-eu-packaging-waste-regulation/"
+      "source_url": "https://fkur.com/en/knowledgebase/ppwr-eu-packaging-waste-regulation/",
+      "lastUpdated": "2026-04-16",
+      "recentUpdates": [
+        {
+          "date": "2026-04-16",
+          "update": "Commission Européenne : nouveau document de guidance PPWR + FAQ officielle publiée le 31 mars 2026. Points clés : (1) AUCUNE période de transition pour le stock PFAS — tout packaging non-conforme produit avant le 12 août 2026 ne peut pas être mis sur le marché après cette date ; (2) clarification des définitions producteurs/importateurs ; (3) harmonisation des labels de tri. Seuils PPWR Article 7 reconfirmés par Eurofins (11 avril 2026) : 30% rPET obligatoire pour bouteilles boissons plastique dès 1er janvier 2030, montant à 65% en 2040. Seuls 2 procédés de recyclage autorisés (Règlement EU 2022/1616) : recyclage mécanique PET alimentaire et recyclage en boucle fermée.",
+          "source": "Packaging Dive, 31 mars 2026 + Eurofins Sustainability Services, 11 avril 2026",
+          "source_url": "https://www.packagingdive.com/news/eu-ppwr-guidance-document/816121/"
+        }
+      ]
     },
     {
       "id": "SUP_2019_904",
@@ -167,7 +176,16 @@ export const regulatoryData = {
           "milestone": "ECHA broader PFAS restriction expected across multiple product applications (separate REACH restriction process ongoing)"
         }
       ],
-      "source_url": "https://www.certivo.com/blog-details/eu-packaging-pfas-ban-2026-what-food-contact-manufacturers-must-know-before-august-deadline"
+      "source_url": "https://www.certivo.com/blog-details/eu-packaging-pfas-ban-2026-what-food-contact-manufacturers-must-know-before-august-deadline",
+      "lastUpdated": "2026-04-16",
+      "recentUpdates": [
+        {
+          "date": "2026-04-16",
+          "update": "Confirmation clé via guidance PPWR du 31 mars 2026 : AUCUNE période de transition pour le stock PFAS. Tout packaging non-conforme aux seuils PFAS (>25 ppb individuel, >250 ppb somme, >50 ppm total fluor organique) produit avant le 12 août 2026 NE PEUT PAS être mis sur le marché européen après cette date. Cette clarification élimine toute ambigüîté sur les stocks existants — impact immédiat pour les clients SIDEL utilisant des matériaux d'emballage avec agents fluorocarburés.",
+          "source": "Packaging Dive, 31 mars 2026",
+          "source_url": "https://www.packagingdive.com/news/eu-ppwr-guidance-document/816121/"
+        }
+      ]
     },
     {
       "id": "BPA_BAN_2024_3190",
@@ -509,7 +527,16 @@ export const regulatoryData = {
           "milestone": "EPR fees for glass packaging surged ~198.84% (glass: sharp spike); plastic fees also rising"
         }
       ],
-      "source_url": "https://www.wastepackgroup.co.uk/2025/04/01/portugal-deposit-return-scheme-2026/"
+      "source_url": "https://www.wastepackgroup.co.uk/2025/04/01/portugal-deposit-return-scheme-2026/",
+      "lastUpdated": "2026-04-16",
+      "recentUpdates": [
+        {
+          "date": "2026-04-16",
+          "update": "DRS Portugal lancé officiellement le 10 avril 2026 pour les bouteilles PET et canettes. Consigne de 10 centimes par contenant. Obligation de reprise pour les magasins de plus de 400 m². Premier système DRS d’Europe du Sud continentale. Source : CanTech International, 14 avril 2026.",
+          "source": "CanTech International, 14 avril 2026",
+          "source_url": "https://www.cantechinternational.com/"
+        }
+      ]
     },
     {
       "id": "EU_HARMONISED_EPR",
