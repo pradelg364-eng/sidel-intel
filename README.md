@@ -1,72 +1,38 @@
-# SIDEL Competitive Intelligence Platform
+# SIDEL Intel — Competitive Intelligence Dashboard
 
-A live competitive intelligence dashboard for **SIDEL** (Tetra Laval Group), tracking 6 key competitors across 4 core product lines, with IP analysis, financial benchmarking, regulatory monitoring, and R&D strategy recommendations.
+Système de veille compétitive et réglementaire pour SIDEL (Tetra Laval Group), développé pour la Direction R&D.
 
-## Live Dashboard
+## 🔗 Dashboard Live
 
-🔗 [Open Dashboard](https://www.perplexity.ai/computer/a/sidel-competitive-intelligence-avHvq_fETXmMw0B.lXzaSw)
+👉 **[Accéder au dashboard](https://www.perplexity.ai/computer/a/sidel-competitive-intelligence-avHvq_fETXmMw0B.lXzaSw)**
 
----
+## Contenu
 
-## Features
+- **Compétiteurs** — Profils complets de 6 concurrents clés (Krones, KHS, SMI, ACMI/Omnia, Serac, GEA)
+- **IP & Brevets** — Analyse des dépôts de brevets et alertes de conflits potentiels
+- **Financiers** — Comparaison financière inter-compétiteurs
+- **Réglementaire** — Monitoring PPWR, SUP, PFAS, rPET, DRS (EU + Global)
+- **Roadmap R&D** — 20 projets R&D dérivés des signaux réglementaires et compétitifs
+- **Stratégie** — Recommandations stratégiques pour SIDEL
 
-| Module | Contents |
-|---|---|
-| **Dashboard** | KPI cards, strategic alerts, competitor cards with threat levels |
-| **Competitors** | Full profiles — products, innovations, patents, business news, partnerships |
-| **IP & Patents** | Patent heatmap, 40+ specific patents, critical IP alerts for SIDEL R&D |
-| **Financials** | Revenue/growth charts, competitive radar, financial comparison table |
-| **Regulatory** | EU + global regulatory tracker, 2025–2030 milestone roadmap, R&D trigger matrix |
-| **R&D Strategy** | 8 prioritised strategic recommendations with specific actions |
-| **Alerts** | Email distribution list management for monthly reports |
+## Automatisation
 
-## Competitors Tracked
+| Tâche | Fréquence | Canal |
+|---|---|---|
+| Brief compétitif & réglementaire | Mercredi 8h00 | Telegram |
+| Rapport complet | Lundi 8h00 | Email |
+| Mise à jour dashboard | Mardi 20h00 | Dashboard live |
 
-- Krones AG (Germany)
-- KHS Group (Germany)
-- SMI Group (Italy)
-- ACMI/Omnia — successor to Sacmi Beverage (Italy)
-- Serac Group (France)
-- GEA Group — Beverage division (Germany)
+## Stack technique
 
-## Product Lines Covered
+- Frontend : React + Vite + Tailwind CSS + shadcn/ui
+- Backend : Express + SQLite
+- Déploiement : S3 (Perplexity Computer)
+- Source data : recherche web hebdomadaire automatisée
 
-- Blow Moulding (PET / EvoBLOW equivalent)
-- Aseptic Filling (Predis/Combi equivalent)
-- Filling & Capping Lines
-- End-of-Line (palletising, wrapping, conveyors)
+## Accès
 
-## Regulatory Domains
-
-- EU PPWR, SUP Directive, PFAS ban, FCM reform, EPR
-- US (FDA, state PCR mandates, FTC Green Guides)
-- China, Brazil, India, UK, Global Plastics Treaty
+Ce repository est privé. Le dashboard est accessible via le lien public ci-dessus.
 
 ---
-
-## Tech Stack
-
-- **Frontend:** React + TypeScript + Tailwind CSS + shadcn/ui + Recharts
-- **Backend:** Express + Drizzle ORM + SQLite
-- **Build:** Vite
-- **Research data:** `/research/` directory (JSON files per competitor + regulatory)
-
-## Local Development
-
-```bash
-npm install
-npm run dev
-# → http://localhost:5000
-```
-
-## Monthly Automation
-
-A scheduled task runs on the **1st of each month** at 8:00 AM Paris time. It:
-1. Researches all 6 competitors for new developments
-2. Scans for new regulatory events and trigger activations
-3. Sends an email summary to the distribution list
-4. Links back to this dashboard
-
----
-
-*Built with [Perplexity Computer](https://www.perplexity.ai/computer) · SIDEL R&D Strategy Intelligence*
+*SIDEL · Tetra Laval Group · R&D Strategy Intelligence*
