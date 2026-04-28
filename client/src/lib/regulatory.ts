@@ -3,7 +3,7 @@
 // DO NOT EDIT MANUALLY — regenerated monthly
 
 export const regulatoryData = {
-  "as_of": "2026-04-16",
+  "as_of": "2026-04-28",
   "regulations": [
     {
       "id": "PPWR_2025_40",
@@ -53,8 +53,14 @@ export const regulatoryData = {
         }
       ],
       "source_url": "https://fkur.com/en/knowledgebase/ppwr-eu-packaging-waste-regulation/",
-      "lastUpdated": "2026-04-16",
+      "lastUpdated": "2026-04-28",
       "recentUpdates": [
+        {
+          "date": "2026-04-28",
+          "update": "US FDA PFAS (food): US District Court for the District of Arizona ordered FDA to decide by 30 June 2026 whether it will establish limits for PFAS in foods (following citizen petition / litigation).",
+          "source": "Bloomberg Law, 16 April 2026",
+          "source_url": "https://news.bloomberglaw.com/health-law-and-business/fda-has-until-june-to-decide-on-pfas-limits-in-food-court-rules"
+        },
         {
           "date": "2026-04-16",
           "update": "Commission Européenne : nouveau document de guidance PPWR + FAQ officielle publiée le 31 mars 2026. Points clés : (1) AUCUNE période de transition pour le stock PFAS — tout packaging non-conforme produit avant le 12 août 2026 ne peut pas être mis sur le marché après cette date ; (2) clarification des définitions producteurs/importateurs ; (3) harmonisation des labels de tri. Seuils PPWR Article 7 reconfirmés par Eurofins (11 avril 2026) : 30% rPET obligatoire pour bouteilles boissons plastique dès 1er janvier 2030, montant à 65% en 2040. Seuls 2 procédés de recyclage autorisés (Règlement EU 2022/1616) : recyclage mécanique PET alimentaire et recyclage en boucle fermée.",
@@ -528,8 +534,14 @@ export const regulatoryData = {
         }
       ],
       "source_url": "https://www.wastepackgroup.co.uk/2025/04/01/portugal-deposit-return-scheme-2026/",
-      "lastUpdated": "2026-04-16",
+      "lastUpdated": "2026-04-28",
       "recentUpdates": [
+        {
+          "date": "2026-04-28",
+          "update": "Portugal DRS: operator SDR Portugal (brand 'volta') launched the national scheme on 10 April 2026, covering PET bottles and metal cans up to 3L with a €0.10 deposit and >2,500 reverse vending collection points.",
+          "source": "TOMRA press release, 10 April 2026",
+          "source_url": "https://www.tomra.com/reverse-vending/media-center/news/2026/portugal-deposit-return-scheme-launch"
+        },
         {
           "date": "2026-04-16",
           "update": "DRS Portugal lancé officiellement le 10 avril 2026 pour les bouteilles PET et canettes. Consigne de 10 centimes par contenant. Obligation de reprise pour les magasins de plus de 400 m². Premier système DRS d’Europe du Sud continentale. Source : CanTech International, 14 avril 2026.",

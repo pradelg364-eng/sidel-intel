@@ -1,7 +1,7 @@
 import { intelligenceData } from "@/lib/intelligence";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Shield, ExternalLink } from "lucide-react";
+import { Shield, ExternalLink, Search, Cpu } from "lucide-react";
 
 const IP_HIGHLIGHTS: Record<string, { patents: { id: string; title: string; relevance: string }[]; strategy: string }> = {
   krones: {
@@ -67,6 +67,109 @@ const IP_HIGHLIGHTS: Record<string, { patents: { id: string; title: string; rele
     ],
   },
 };
+
+// ── IP Search Framework ─────────────────────────────────────────────────────
+const CPC_CLASSES = [
+  {
+    code: "B67C 7/0073",
+    domain: "Aseptic Filling",
+    description: "Concurrent sterilising, filling & closing of bottles",
+    sidel_product: "Predis / Aseptic Combi",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=cpc%3DB67C7%2F0073",
+    urgency: "critical",
+  },
+  {
+    code: "B29C 49/00",
+    domain: "PET Blow Moulding",
+    description: "Blow moulding of hollow articles (covers EvoBLOW, laser blowing)",
+    sidel_product: "EvoBLOW / EvoBLOW Laser",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=cpc%3DB29C49%2F00",
+    urgency: "critical",
+  },
+  {
+    code: "B65B 53/00",
+    domain: "End-of-Line — Sustainable Packaging",
+    description: "Shrink-film wrapping & sustainable secondary packaging alternatives",
+    sidel_product: "Gebo Cermex / EvoPack",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=cpc%3DB65B53%2F00",
+    urgency: "high",
+  },
+  {
+    code: "B65C 3/12",
+    domain: "Labelling",
+    description: "Rolling labels onto bottles — relevant to full-line solutions",
+    sidel_product: "Labelling (full line)",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=cpc%3DB65C3%2F12",
+    urgency: "medium",
+  },
+  {
+    code: "G05B 19/00",
+    domain: "Autonomous & Connected Lines",
+    description: "Digital control systems — covers Smart Line / zero-operator autonomy",
+    sidel_product: "NeXt Line / Smart Line",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=cpc%3DG05B19%2F00",
+    urgency: "high",
+  },
+  {
+    code: "B65G 54/02",
+    domain: "Linear / Planar Movers",
+    description: "Linear motor conveying systems — disruptive transport tech (Drinktec 2025)",
+    sidel_product: "Linear Mover Platform",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=cpc%3DB65G54%2F02",
+    urgency: "high",
+  },
+];
+
+const MONITORED_ASSIGNEES = [
+  {
+    name: "Krones AG",
+    note: "Primary global rival — monitor full circular PET loop + fibre container cluster",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=pa%3DKrones",
+    urgency: "critical",
+  },
+  {
+    name: "KHS GmbH",
+    note: "Key direct competitor in filling & packaging — barrier coatings, aseptic bloc architecture",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=pa%3DKHS+GmbH",
+    urgency: "critical",
+  },
+  {
+    name: "SMI S.p.A.",
+    note: "Laser preform heating (US11440238) conflicts with EvoBLOW Laser space",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=pa%3DSMI+spa",
+    urgency: "critical",
+  },
+  {
+    name: "SACMI Imola",
+    note: "Highly relevant — IPS preform, compression blow, CCM caps; residual IP post-divestiture",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=pa%3DSACMI",
+    urgency: "high",
+  },
+  {
+    name: "GEA Group",
+    note: "Only player with aseptic aluminium bottle IP (US12304795) — monitor expansion",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=pa%3DGEA+Group",
+    urgency: "critical",
+  },
+  {
+    name: "Serac Group",
+    note: "Aseptic filling nozzle + BluStream e-beam cap sterilisation moat",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=pa%3DSerac",
+    urgency: "high",
+  },
+  {
+    name: "Shibuya Corporation",
+    note: "Major aseptic area threat — monitor aseptic PET filings",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=pa%3DShibuya",
+    urgency: "high",
+  },
+  {
+    name: "SIPA S.p.A.",
+    note: "Major PET blowing & tooling competitor — overlaps EvoBLOW platform",
+    espacenet: "https://worldwide.espacenet.com/patent/search?q=pa%3DSIPA+spa",
+    urgency: "high",
+  },
+];
 
 const PRODUCT_LINES = [
   { key: "blow_moulding", label: "Blow Moulding" },
@@ -166,6 +269,79 @@ export default function IPAnalysis() {
               <span className="text-sm text-red-700 dark:text-red-400 leading-snug">{a.text}</span>
             </div>
           ))}
+        </CardContent>
+      </Card>
+
+      {/* ── IP Search Framework ── */}
+      <Card className="border-border">
+        <CardHeader className="pb-2 pt-4 px-4">
+          <CardTitle className="text-sm font-semibold flex items-center gap-2">
+            <Cpu size={14} className="text-primary" />
+            Strategic CPC Classes — Espacenet Search Framework
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="px-4 pb-4">
+          <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+            Monitor these CPC classes monthly on <a href="https://worldwide.espacenet.com" target="_blank" rel="noreferrer" className="text-primary underline">Espacenet</a> to catch competitor filings in SIDEL's core technology domains before they publish in trade press.
+          </p>
+          <div className="space-y-2">
+            {CPC_CLASSES.map((c) => (
+              <div key={c.code} className="flex items-start gap-3 p-2.5 rounded-lg bg-muted/50">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <code className="text-xs font-mono text-primary shrink-0">{c.code}</code>
+                    <Badge variant="outline" className="text-[10px] px-1.5 py-0 shrink-0">{c.domain}</Badge>
+                    <span className="text-xs text-muted-foreground hidden sm:inline">{c.sidel_product}</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-0.5 leading-snug">{c.description}</p>
+                </div>
+                <div className="flex items-center gap-1.5 shrink-0">
+                  <Badge className={`text-[10px] px-1.5 py-0 border-0 ${
+                    c.urgency === 'critical' ? 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400' :
+                    c.urgency === 'high' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400' :
+                    'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400'
+                  }`}>{c.urgency}</Badge>
+                  <a href={c.espacenet} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                    <ExternalLink size={12} />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* ── Monitored Assignees ── */}
+      <Card className="border-border">
+        <CardHeader className="pb-2 pt-4 px-4">
+          <CardTitle className="text-sm font-semibold flex items-center gap-2">
+            <Search size={14} className="text-primary" />
+            Monitored Assignees — Espacenet Watch List
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="px-4 pb-4">
+          <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+            Search by assignee name monthly to catch all new filings from these entities, regardless of CPC class.
+          </p>
+          <div className="space-y-2">
+            {MONITORED_ASSIGNEES.map((a) => (
+              <div key={a.name} className="flex items-start gap-3 p-2.5 rounded-lg bg-muted/50">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="text-xs font-semibold shrink-0">{a.name}</span>
+                    <Badge className={`text-[10px] px-1.5 py-0 border-0 shrink-0 ${
+                      a.urgency === 'critical' ? 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400' :
+                      'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400'
+                    }`}>{a.urgency}</Badge>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-0.5 leading-snug">{a.note}</p>
+                </div>
+                <a href={a.espacenet} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors shrink-0 mt-0.5">
+                  <ExternalLink size={12} />
+                </a>
+              </div>
+            ))}
+          </div>
         </CardContent>
       </Card>
 

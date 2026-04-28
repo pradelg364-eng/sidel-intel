@@ -370,6 +370,13 @@ export const intelligenceData = {
       },
       "business_news": [
         {
+          "title": "KHS launches 'KHS SUPREME' PET bottle concept using Plasmax barrier tech for sensitive beverages",
+          "date": "2026-04-28",
+          "summary": "KHS announced the KHS SUPREME PET bottle concept leveraging Plasmax silicon-oxide barrier coating to protect oxygen-sensitive beverages (e.g., tea), claiming up to 10x longer shelf life and outputs up to 60,000 bottles/hour; the coating is <100 nm thick and positioned as compatible with 100% rPET and standard recycling.",
+          "source": "KHS press release (Dortmund, Feb 24, 2026)",
+          "url": "https://www.khs.com/en/company/news/press-releases/detail/khs-supreme"
+        },
+        {
           "title": "KHS and Ferrum Packaging AG jointly acquire H.F. Meyer Maschinenbau GmbH & Co. KG",
           "date": "2025-01-01",
           "summary": "",
@@ -1201,6 +1208,13 @@ export const intelligenceData = {
         }
       },
       "business_news": [
+        {
+          "title": "GEA and Siemens showcase digital twins + AI for beverage production (GEA GSX 260 separator connected to GEA Cloud)",
+          "date": "2026-04-28",
+          "summary": "GEA outlined a Hannover Messe 2026 showcase with Siemens featuring a fully digital beverage production journey and highlighted the skid-mounted GSX 260 beverage separator (with integrated Water Saving Unit) connected to GEA Cloud for real-time analytics and AI-driven optimisation/predictive maintenance.",
+          "source": "Food & Drink Technology (Apr 16, 2026)",
+          "url": "https://www.foodanddrinktechnology.com/news/66227/digital-twins-and-ai-slash-beverage-development-times/"
+        },
         {
           "title": "Algeria — World's Largest Integrated Dairy Plant Contract",
           "date": "2025-07-28",
