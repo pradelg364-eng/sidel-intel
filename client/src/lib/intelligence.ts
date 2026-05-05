@@ -129,6 +129,13 @@ export const intelligenceData = {
       },
       "business_news": [
         {
+          "title": "Krones announces Executive Board changes: Thomas Ricker to become CEO; Christoph Klenk to step down after AGM",
+          "date": "2026-05-05",
+          "summary": "Krones' Supervisory Board approved leadership changes: CEO Christoph Klenk will leave the Executive Board effective 10 June 2026; Thomas Ricker will become CEO on 11 June 2026; two additional board members (Bülent Bayraktar and Reinhold Jung) join on 1 July 2026; CTO Markus Tischer’s contract extended to 2031.",
+          "source": "FRUIT PROCESSING magazine (7 Apr 2026)",
+          "url": "https://www.fruit-processing.com/2026/04/personnel-changes-in-the-executive-board-of-krones-ag/"
+        },
+        {
           "title": "Acquisition signed: Netstal Maschinen AG from KraussMaffei (100% stake)",
           "date": "2024-02-06",
           "summary": "",
@@ -156,30 +163,35 @@ export const intelligenceData = {
           "title": "Groundbreaking ceremonies for new factories in China and India — both targeting H2 2026 start-up. India factory: localise production to compete on pri",
           "date": "2025-Q4",
           "summary": "",
+          "source": "",
           "url": ""
         },
         {
           "title": "North America life-cycle/service facility agreement signed (new agreement extending service production capacity). 1,600 employees in US at end-2025.",
           "date": "2025",
           "summary": "",
+          "source": "",
           "url": ""
         },
         {
           "title": "FY2025: Revenue €5.664B (+7%), record EBITDA €602.3M (+12.2%), ROCE 19.1%. EPS missed analyst consensus of €3.26, triggering -5.71% stock decline to €",
           "date": "2025",
           "summary": "",
+          "source": "",
           "url": ""
         },
         {
           "title": "Harboes Bryggeri (Denmark) — Krones replaces 2004-vintage line with complete new technology line (announced June 2024). Beer modernisation reference.",
           "date": "2024",
           "summary": "",
+          "source": "",
           "url": ""
         },
         {
           "title": "Krones North America expansion confirmée ; présence à MD&M South (22-23 avril 2026)",
           "date": "2026-04-16",
           "summary": "L'expansion de Krones en Amérique du Nord a été confirmée (Packaging Digest, novembre 2025). Krones sera présent au salon MD&M South (22-23 avril 2026), renforçant sa visibilité commerciale aux États-Unis. Krones compte déjà 1 600 employés aux États-Unis et construit une nouvelle usine en Inde pour la production locale.",
+          "source": "Packaging Digest (Nov 2025)",
           "url": "https://www.packagingdigest.com/"
         }
       ],
