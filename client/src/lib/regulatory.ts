@@ -56,6 +56,12 @@ export const regulatoryData = {
       "lastUpdated": "2026-04-28",
       "recentUpdates": [
         {
+          "date": "2026-05-12",
+          "update": "PPWR PFAS limits (effective 12 Aug 2026): new industry guidance emphasises 'PFAS-free' does not mean zero PFAS; compliance hinges on PPWR threshold testing (targeted PFAS + total fluorine screening) and low measurement uncertainty near decision limits.",
+          "source": "Food Safety Magazine (Mar 2026)",
+          "source_url": "https://www.food-safety.com/articles/11228-pfas-free-food-packaging-by-august-2026"
+        },
+        {
           "date": "2026-04-28",
           "update": "US FDA PFAS (food): US District Court for the District of Arizona ordered FDA to decide by 30 June 2026 whether it will establish limits for PFAS in foods (following citizen petition / litigation).",
           "source": "Bloomberg Law, 16 April 2026",
@@ -183,7 +189,7 @@ export const regulatoryData = {
         }
       ],
       "source_url": "https://www.certivo.com/blog-details/eu-packaging-pfas-ban-2026-what-food-contact-manufacturers-must-know-before-august-deadline",
-      "lastUpdated": "2026-04-16",
+      "lastUpdated": "2026-05-12",
       "recentUpdates": [
         {
           "date": "2026-04-16",

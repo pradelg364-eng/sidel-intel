@@ -129,6 +129,13 @@ export const intelligenceData = {
       },
       "business_news": [
         {
+          "title": "Krones reports Q1 2026: order intake rises to €1.512bn (+5.3% YoY) and FY2026 guidance reaffirmed",
+          "date": "2026-05-12",
+          "summary": "Krones reported Q1 2026 order intake of €1,512.1m (+5.3% YoY) with a book-to-bill of 1.10 and confirmed FY2026 targets (3–5% revenue growth, 10.7–11.1% EBITDA margin, 19–20% ROCE). EBITDA margin improved to 10.8% in Q1 despite currency headwinds and working-capital driven free cash outflow.",
+          "source": "EQS-News / Krones quarterly statement (8 May 2026)",
+          "url": "https://www.investegate.co.uk/announcement/eqs/krones-ag--0lq4/eqs-news-krones-starts-financial-year-with-s-/9558114"
+        },
+        {
           "title": "Krones announces Executive Board changes: Thomas Ricker to become CEO; Christoph Klenk to step down after AGM",
           "date": "2026-05-05",
           "summary": "Krones' Supervisory Board approved leadership changes: CEO Christoph Klenk will leave the Executive Board effective 10 June 2026; Thomas Ricker will become CEO on 11 June 2026; two additional board members (Bülent Bayraktar and Reinhold Jung) join on 1 July 2026; CTO Markus Tischer’s contract extended to 2031.",
@@ -619,6 +626,13 @@ export const intelligenceData = {
       },
       "business_news": [
         {
+          "title": "SMI highlights Interpack 2026 showcase: SFP ERGON stretch-film packer + ACP ERGON pick & place case packer (Hall 13, Booth B15)",
+          "date": "2026-05-12",
+          "summary": "Ahead of Interpack 2026, SMI positioned its secondary packaging as combining efficiency with environmental protection via energy savings and recyclable/biodegradable materials; the company highlighted SFP ERGON (cold-stretch 10-micron film, no electric shrink tunnel) and ACP ERGON case packing (up to 25 packs/min, compact monobloc).",
+          "source": "SMI Group press note (Interpack 2026 preview)",
+          "url": "https://www.smigroup.com.mx/profilo/smigroup-press/N1610-sustainable-and-functional-packaging-smi-awaits-you-at-interpack-2026"
+        },
+        {
           "title": "SMI opens East Africa branch: SMI Machinery East Africa Limited in Nairobi, Kenya",
           "date": "March 4-9, 2026",
           "summary": "",
@@ -1006,6 +1020,13 @@ export const intelligenceData = {
         }
       },
       "business_news": [
+        {
+          "title": "Serac previews Interpack 2026: new PET preform transfer concept, FCS-X HMI, and 'My Serac' digital platform (Hall 13, Booth B63)",
+          "date": "2026-05-12",
+          "summary": "Serac announced it will present a new PET blow moulding concept ('Rethinking PET Preform Transfer') based on an independent shuttle transfer system for flexibility/precision/compact footprint, alongside the new FCS-X operator interface and the 'My Serac' digital platform for documentation, spare parts and maintenance tools.",
+          "source": "Serac news (31 Mar 2026)",
+          "url": "https://www.serac-group.com/news/interpack-2026-discover-our-latest-developments/"
+        },
         {
           "title": "Serac and Budé Group develop next-generation aseptic monobloc for high-speed aerosol filling",
           "date": "2025-06-09",
